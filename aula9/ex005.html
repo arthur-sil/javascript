@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: #3ddacd;
+            color: aliceblue;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com <strong>DOM</strong> </h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendedo a mecher no <strong>dom</strong></p>
+    <li>arroz</ul>
+        <div id="msg">clique em mim</div>
+        <br>
+        <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1]
+            document.write(p1.innerHTML)
+            var d = window.document.getElementById('msg')
+            d.style.color = 'green'
+            d.innerText = 'clique em mim'
+        </script>
+</body>
+</html>
